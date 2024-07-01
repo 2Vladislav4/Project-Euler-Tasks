@@ -1,0 +1,9 @@
+num1 = 3
+num2 = 5
+max = 1000
+sum = 0
+for i in range(0, max):
+	if (i + num1) % num1 == 0 or (i + num2) % num2 == 0:
+		print(i)
+		sum = sum + i
+print(sum)
