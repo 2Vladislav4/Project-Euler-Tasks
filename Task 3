@@ -1,0 +1,11 @@
+import math
+num = 600851475143
+factors = []
+
+for i in range(2, int(math.sqrt(num))+1):
+    while num % i == 0:
+        print(i)
+        factors.append(i)
+        num = num // i
+
+print("Largest prime factor: ", factors[len(factors)-1])
